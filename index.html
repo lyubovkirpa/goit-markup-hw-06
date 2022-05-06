@@ -459,13 +459,21 @@
           <button class="button-form" type="submit">Подписаться<svg class="button-form-icon" width="24" height="24">
             <use href="./images/symbol-defs.svg#icon-icon-send">
             </use>
-            </svg></button>
+            </svg>
+          </button>
           </form>
       </div>
     </footer>
     <div class="backdrop is-hidden" data-modal>
       <div class="modal">
         <button type="button" class="modal-close" data-modal-close>х</button> 
+        <p class="modal-title">Оставьте свои данные, мы вам перезвоним</p>
+        <form>
+          <input type="text" class="modal-input"name="user-name" required>
+          <input type="text" class="modal-input"name="user-tel" required>
+          <input type="text" class="modal-input"name="user-email">
+          <button type="submit">Отправить</button>
+        </form>
       </div>
     </div>
   <script src="./js/modal.js"></script>

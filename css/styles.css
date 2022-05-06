@@ -638,7 +638,6 @@ background-color:rgba(33, 150, 243, 0);
 }
 
 .button-form {
-  cursor: pointer;
   color: var(--main-bgd-color);
   background-color: var(--bgd-color);
   font-family: inherit;
@@ -657,9 +656,8 @@ background-color:rgba(33, 150, 243, 0);
 }
 
 .button-form-icon {
-fill: currentColor;
 margin-left: 10px;
-color: var(--main-bgd-color);
+background-color: var(--main-bgd-color);
 }
 
 .contact.link-icon {
@@ -727,6 +725,7 @@ transition: opacity 400ms, visibility 400ms;
   left: 50%;
   transition: transform 500ms;
   transform: translate(-50%, -50%) scale(1) rotate(0);
+  padding: 40px;
 }
 
 .modal-close {
@@ -747,3 +746,21 @@ transition: opacity 400ms, visibility 400ms;
   visibility: hidden;
 }
 
+.modal-title {
+font-weight: 700;
+font-size: 20px;
+line-height: 1.15;
+text-align: center;
+letter-spacing: 0.03em;
+color: var(--title-text-color);
+margin-bottom: 20px;
+}
+
+.modal-input {
+width: 100%;
+height: 40px;
+border: 1px solid rgba(33, 33, 33, 0.2);
+border-radius: 4px;
+margin-bottom: 28px;
+padding-left: 42px;
+}
