@@ -469,10 +469,21 @@
         <button type="button" class="modal-close" data-modal-close>х</button> 
         <p class="modal-title">Оставьте свои данные, мы вам перезвоним</p>
         <form>
-          <input type="text" class="modal-input"name="user-name" required>
+          <label class="modal-label" for="user-name">Имя</label>
+          <div class="modal-input-wrap">
+          <input type="text" class="modal-input" name="user-name" required id="user-name">
+          <svg class="input-icon" width="18" height="18">
+            <use href="./images/person.svg#icon-Vector"></use>
+          </svg>
+          </div>
+          <label class="modal-label" for="user-name">Телефон</label>
           <input type="text" class="modal-input"name="user-tel" required>
+          <label class="modal-label" for="user-name">Почта</label>
           <input type="text" class="modal-input"name="user-email">
-          <button type="submit">Отправить</button>
+          <label class="modal-label" for="comment">Комментарий</label>
+          <textarea class="user-text" name="comment" id="comment" placeholder="Введите текст"></textarea>
+          <p class="modal-text">Соглашаюсь с рассылкой и принимаю Условия договора</p>
+          <button class="modal-button" type="submit">Отправить</button>
         </form>
       </div>
     </div>
